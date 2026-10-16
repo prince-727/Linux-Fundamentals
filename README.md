@@ -59,63 +59,46 @@ The assignment does not specify the virtualisation platform, network adapter con
 1. **Open the Kali Linux terminal.**
 
    Start the Kali Linux virtual machine and open a terminal to execute the required commands.
-
 2. **Identify the current user.**
 
    Run the following command:
-
-   ```bash
+   ```
    whoami
    ```
-
    The output identifies the current username as `kali`.
-
 3. **Check the hostname.**
 
    Execute:
-
-   ```bash
+   ```
    hostname
    ```
-
    The hostname displayed is `kali`.
-
 4. **Check the current working directory.**
 
    Run:
-
-   ```bash
+   ```
    pwd
    ```
-
    The command confirms that the current working directory is the home directory.
-
 5. **Inspect operating system and hardware information.**
 
    Retrieve the operating system and hardware details using the commands demonstrated in the assignment. The results indicate that the virtual machine has approximately `5.8 GiB` of RAM, `4.5 GiB` of available disk space on the main partition, and Linux kernel version `6.19.14`.
 
    The specific commands used for these checks are not documented in the assignment text.
-
 6. **Test connectivity to an external IP address.**
 
    Execute:
-
-   ```bash
+   ```
    ping -c 2 8.8.8.8
    ```
-
    This sends two ICMP echo requests to `8.8.8.8` and displays the connectivity results and summary statistics.
-
 7. **Test connectivity using a domain name.**
 
    Run:
-
-   ```bash
+   ```
    ping -c 4 google.com
    ```
-
    This sends four ICMP echo requests to `google.com`. The command also allows the system to resolve the domain name to an IP address.
-
 8. **Analyse the ping results.**
 
    Review the resolved IP address, round-trip time, and packet-loss statistics for both connectivity tests. Compare the results to understand how response times can differ between network destinations.
@@ -139,7 +122,6 @@ The assignment successfully demonstrates basic Linux system identification and n
   - Command: `ping -c 2 8.8.8.8`.
   - Average round-trip time: `183.032 ms`.
   - Packet loss: `0%`.
-
 - **Ping destination:** `google.com`.
   - Command: `ping -c 4 google.com`.
   - Resolved IP address: `92.249.39.135`.
@@ -151,4 +133,11 @@ The assignment successfully demonstrates basic Linux system identification and n
 - The system information checks provide an overview of the virtual machine's memory, available disk space, and Linux kernel version.
 - The ping test to `8.8.8.8` completed with `0% packet loss`, indicating successful delivery of the tested echo requests.
 - The domain-based ping test demonstrated that `google.com` resolved to an IP address and returned network responses.
-- The measured response time for `google.com` was lower than that for `8.8.8.8
+- The measured response time for `google.com` was lower than that for `8.8.8.8`. This difference may be influenced by network routing, destination location, and other network conditions.
+- The `-c 4` option instructs `ping` to send four requests and then stop. Without a count limit, `ping` generally continues sending requests until interrupted manually with `Ctrl+C`.
+
+Overall, the project reinforces fundamental Linux command-line skills and demonstrates how `ping` can be used to investigate basic network connectivity and response times.
+
+## Author
+
+- **Name:** Prince Atinyo
