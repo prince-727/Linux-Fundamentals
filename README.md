@@ -1,4 +1,4 @@
-# Linux Fundamentals Assignment
+# Linux Fundamentals Project
 
 This project explores fundamental Linux system administration and basic network connectivity using a Kali Linux virtual machine. It demonstrates how to retrieve system information, inspect hardware resources, identify the Linux kernel version, and test network connectivity using the `ping` command.
 
